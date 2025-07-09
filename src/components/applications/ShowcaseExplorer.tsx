@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Window from '../os/Window';
 import useInitialWindowSize from '../../hooks/useInitialWindowSize';
 import VerticalNavbar from '../showcase/VerticalNavbar';
+import Home from '../showcase/Home';
+import About from '../showcase/About';
 
 export interface ShowcaseExplorerProps extends WindowAppProps { }
 
@@ -26,7 +28,8 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
                 <div className="site-page">
                     <VerticalNavbar></VerticalNavbar>
                     <Routes>
-
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
                     </Routes>
                 </div>
             </Router>
