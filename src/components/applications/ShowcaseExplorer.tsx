@@ -6,6 +6,7 @@ import VerticalNavbar from '../showcase/VerticalNavbar';
 import Home from '../showcase/Home';
 import About from '../showcase/About';
 import Contact from '../showcase/Contact';
+import Experience from '../showcase/Experience';
 
 export interface ShowcaseExplorerProps extends WindowAppProps { }
 
@@ -31,6 +32,7 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
+                        <Route path="/experience" element={<Experience />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </div>
