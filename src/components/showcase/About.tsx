@@ -63,10 +63,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <h3>兴趣爱好</h3>
                         <br />
                         <p>
-                            除了软件开发，我在空闲时间也有很多爱好。{' '}
-                            <Link to="/projects/music">音乐</Link>{' '}
-                            创作{' '}
-                            <Link to="/projects/art"></Link>。最大的兴趣爱好莫过于写作，
+                            除了软件开发，我在空闲时间也有很多爱好。最大的兴趣爱好莫过于写作，
                             在郁郁沉沉时，写作是我最好的发泄方式，写出些许文青的语句组成故事。
                         </p>
                         <br />

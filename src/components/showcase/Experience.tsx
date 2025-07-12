@@ -74,11 +74,7 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                     </li>
                     <li>
                         <p>
-
-                        </p>
-                    </li>
-                    <li>
-                        <p>
+                            私有化项目定制开发，协调管理私有化开发进度，完美解决用户需求
                         </p>
                     </li>
                 </ul>
@@ -98,12 +94,25 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-
+                    新一代低空数智平台。使用了Vue3、Vue-Router、Pinia、Agora-Sdk、ZLMediaKit、Mars3D
                 </p>
                 <br />
-                <h3 style={styles.indent}>1</h3>
                 <ul>
-
+                    <li>
+                        <p>
+                            设计并实现远程控制、设备管理、文件下载功能，协调针对应用程序优化和性能进行主要重构
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            使用LeaferJS封装图片编辑、查看、标注核心功能，使其他开发者实现更流畅的开发体验
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            基于Cesium VideoSynchronizer源码，重新设计航线-视频同调功能，解决原有多视频循环播放闪烁问题
+                        </p>
+                    </li>
                 </ul>
             </div>
         </div>
