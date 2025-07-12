@@ -1,7 +1,7 @@
 import type { IconName } from "../../assets/icons";
 import Doom from "../applications/Doom";
 import Monopoly from "../applications/Monopoly";
-import Tetris from "../applications/tetris";
+import Tetris from "../applications/Tetris";
 import ShowcaseExplorer from "../applications/ShowcaseExplorer";
 import XianJian from "../applications/XianJian";
 import Bomberman from "../applications/Bomberman";

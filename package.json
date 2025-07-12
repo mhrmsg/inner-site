@@ -10,9 +10,9 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "emulators-ui": "0.73.1",
+        "emulators-ui": "^0.73.1",
         "framer-motion": "^12.23.0",
-        "js-dos": "7.5.0",
+        "js-dos": "^7.3.9",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
         "react-router": "^7.6.3",

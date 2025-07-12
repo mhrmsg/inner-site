@@ -16,19 +16,17 @@ export default function DosPlayer(props: PlayerProps) {
     const [dos, setDos] = useState<Instance | null>(null);
     const didInitRef = useRef(false);
 
+
     useEffect(() => {
         if (didInitRef.current) return;
         didInitRef.current = true;
-
 
         if (rootRef === null || rootRef.current === null) {
             return;
         }
 
         const root = rootRef.current as HTMLDivElement;
-        const instance = Dos(root, {
-
-        });
+        const instance = Dos(root);
 
         setDos(instance);
         const elements = rootRef.current.getElementsByClassName('flex-grow-0');
@@ -45,13 +43,16 @@ export default function DosPlayer(props: PlayerProps) {
 
     useEffect(() => {
         if (dos !== null) {
+            //第一次执行会卡住
             dos.run(props.bundleUrl);
+            dos.stop().then(() => {
+                dos.run(props.bundleUrl);
+            })
         }
 
         return () => {
             if (dos !== null) {
                 dos.stop();
-
             }
         };
     }, [dos, props.bundleUrl]);

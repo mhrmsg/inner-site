@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DosPlayer from '../dos/DosPlayer';
 import Window from '../os/Window';
 
-export interface DoomAppProps extends WindowAppProps {}
+export interface DoomAppProps extends WindowAppProps { }
 
 const DoomApp: React.FC<DoomAppProps> = (props) => {
     const [width, setWidth] = useState(980);

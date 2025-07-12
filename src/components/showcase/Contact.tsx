@@ -84,6 +84,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                 setFormMessageColor(colors.blue);
                 setIsLoading(false);
             } else {
+                //@ts-ignore
                 setFormMessage(data.error);
                 setFormMessageColor(colors.red);
                 setIsLoading(false);
