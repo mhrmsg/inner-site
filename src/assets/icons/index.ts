@@ -8,6 +8,10 @@ import computerSmall from './computerSmall.png';
 import myComputer from './myComputer.png';
 import showcaseIcon from './showcaseIcon.png';
 import doomIcon from './doomIcon.png';
+import xianjianIcon from './xianJianIcon.png';
+import tetrisIcon from './trailIcon.png';
+import bombermanIcon from './bombermanIcon.png';
+import monopolyIcon from './monopolyIcon.png';
 import henordleIcon from './henordleIcon.png';
 import credits from './credits.png';
 import volumeOn from './volumeOn.png';
@@ -28,6 +32,10 @@ const icons = {
     myComputer: myComputer,
     showcaseIcon: showcaseIcon,
     doomIcon: doomIcon,
+    xianJianIcon: xianjianIcon,
+    tetrisIcon: tetrisIcon,
+    monopolyIcon: monopolyIcon,
+    bombermanIcon: bombermanIcon,
     volumeOn: volumeOn,
     volumeOff: volumeOff,
     credits: credits,

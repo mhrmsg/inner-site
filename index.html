@@ -12,6 +12,31 @@
   <!-- adobe type kit fonts  -->
   <link rel="stylesheet" href="https://use.typekit.net/llo2eru.css" />
   <title>MHR - OS</title>
+
+  <script>
+    window.onload = () => {
+      addEventListener('mousemove', (event) => {
+        window.parent.postMessage({ clientX: event.clientX, clientY: event.clientY, type: 'mousemove' }, '*');
+      });
+      addEventListener('mousedown', (event) => {
+        window.parent.postMessage({ type: 'mousedown' }, '*');
+      });
+      addEventListener('mouseup', (event) => {
+        window.parent.postMessage({ type: 'mouseup' }, '*');
+      });
+      addEventListener('keydown', (event) => {
+        window.parent.postMessage({ type: 'keydown', key: event.key }, '*');
+      });
+      addEventListener('keyup', (event) => {
+        window.parent.postMessage({ type: 'keyup', key: event.key }, '*');
+      });
+    };
+  </script>
+  <script src="/js-dos.js"></script>
+  <link rel="stylesheet" href="/js-dos.css">
+  <script>
+    emulators.pathPrefix = "/";
+  </script>
 </head>
 
 <body>

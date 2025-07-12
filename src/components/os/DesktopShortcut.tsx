@@ -5,6 +5,7 @@ import { Icon } from '../general';
 
 export interface DesktopShortcutProps {
     icon: IconName;
+    shortKey: string;
     shortcutName: string;
     invertText?: boolean;
     onOpen: () => void;
@@ -13,6 +14,7 @@ export interface DesktopShortcutProps {
 const DesktopShortcut: React.FC<DesktopShortcutProps> = ({
     icon,
     shortcutName,
+    shortKey,
     invertText,
     onOpen,
 }) => {
@@ -27,7 +29,7 @@ const DesktopShortcut: React.FC<DesktopShortcutProps> = ({
     const [doubleClickTimerActive, setDoubleClickTimerActive] = useState(false);
 
     const getShortcutId = useCallback(() => {
-        const shortcutId = shortcutName.replace(/\s/g, '');
+        const shortcutId = shortKey.replace(/\s/g, '');
         return `desktop-shortcut-${shortcutId}`;
     }, [shortcutName]);
 
@@ -154,6 +156,10 @@ const styles: StyleSheetCSS = {
         fontSize: 8,
         paddingRight: 2,
         paddingLeft: 2,
+    },
+    icon: {
+        width: 32,
+        height: 32
     },
     iconContainer: {
         cursor: 'pointer',

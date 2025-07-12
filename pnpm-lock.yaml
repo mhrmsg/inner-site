@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      emulators-ui:
+        specifier: 0.73.1
+        version: 0.73.1
       framer-motion:
         specifier: ^12.23.0
         version: 12.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      js-dos:
+        specifier: 7.5.0
+        version: 7.5.0
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -689,6 +695,9 @@ packages:
   electron-to-chromium@1.5.180:
     resolution: {integrity: sha512-ED+GEyEh3kYMwt2faNmgMB0b8O5qtATGgR4RmRsIp4T6p7B8vdMbIedYndnvZfsaXvSzegtpfqRMDNCjjiSduA==}
 
+  emulators-ui@0.73.1:
+    resolution: {integrity: sha512-OA08X7ksFPfoYIGeV4oBkX8OgLi95ps3ApujtSKOKju4p+xTtwwPuJipeKSA25x097KxeRF9bOV9j7h6FN0+PA==}
+
   esbuild@0.25.6:
     resolution: {integrity: sha512-GVuzuUwtdsghE3ocJ9Bs8PNoF13HNQ5TXbEi2AhvVb8xU1Iwt9Fos9FEamfoee+u/TOsn7GUWc04lz46n2bbTg==}
     engines: {node: '>=18'}
@@ -874,6 +883,9 @@ packages:
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+
+  js-dos@7.5.0:
+    resolution: {integrity: sha512-7vI5HqE9MNkytyTwFVjqU+HyIPCWhwc4SmCp/eba7UC7ZhtcG043TFcfB62qdVPwGmzLCV01nm/NJceEOTeFdA==}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -1750,6 +1762,8 @@ snapshots:
 
   electron-to-chromium@1.5.180: {}
 
+  emulators-ui@0.73.1: {}
+
   esbuild@0.25.6:
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.25.6
@@ -1950,6 +1964,10 @@ snapshots:
   is-number@7.0.0: {}
 
   isexe@2.0.0: {}
+
+  js-dos@7.5.0:
+    dependencies:
+      nanoid: 3.3.11
 
   js-tokens@4.0.0: {}
 

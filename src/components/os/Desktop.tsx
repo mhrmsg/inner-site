@@ -34,6 +34,7 @@ const Desktop: React.FC<DesktopProps> = (props) => {
             const app = APPLICATIONS[key];
             newShortcuts.push({
                 shortcutName: app.name,
+                shortKey: app.key,
                 icon: app.shortcutIcon,
                 onOpen: () => {
                     addWindow(
@@ -176,10 +177,11 @@ const Desktop: React.FC<DesktopProps> = (props) => {
                             style={Object.assign({}, styles.shortcutContainer, {
                                 top: i * 104,
                             })}
-                            key={shortcut.shortcutName}
+                            key={shortcut.shortKey}
                         >
                             <DesktopShortcut
                                 icon={shortcut.icon}
+                                shortKey={shortcut.shortKey}
                                 shortcutName={shortcut.shortcutName}
                                 onOpen={shortcut.onOpen}
                             />
