@@ -27,13 +27,14 @@ export default function DosPlayer(props: PlayerProps) {
 
         const root = rootRef.current as HTMLDivElement;
         const instance = Dos(root);
-
         setDos(instance);
         const elements = rootRef.current.getElementsByClassName('flex-grow-0');
-
-        while (elements.length > 0) {
-            elements[0].remove();
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].setAttribute("style", "display:none")
         }
+        // while (elements.length > 0) {
+        //     elements[0].remove();
+        // }
 
         return () => {
             instance.stop();
@@ -43,11 +44,7 @@ export default function DosPlayer(props: PlayerProps) {
 
     useEffect(() => {
         if (dos !== null) {
-            //第一次执行会卡住
-            dos.run(props.bundleUrl);
-            dos.stop().then(() => {
-                dos.run(props.bundleUrl);
-            })
+            dos.run(props.bundleUrl)
         }
 
         return () => {
