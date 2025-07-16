@@ -29,9 +29,9 @@ export default function DosPlayer(props: PlayerProps) {
         const instance = Dos(root);
         setDos(instance);
         const elements = rootRef.current.getElementsByClassName('flex-grow-0');
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].setAttribute("style", "display:none")
-        }
+        // for (let i = 0; i < elements.length; i++) {
+        //     elements[i].setAttribute("style", "display:none")
+        // }
         // while (elements.length > 0) {
         //     elements[0].remove();
         // }
